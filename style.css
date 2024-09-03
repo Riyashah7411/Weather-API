@@ -1,0 +1,283 @@
+  *{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: cursive;
+} 
+
+:root{
+    --colorDark1 :#11204E;
+    --colorDark2 : #3F72AF;
+    --colorLight1 : #DBE2EF;
+    --colorLight2 :  #F9F7F7;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: #74EBD5;
+    background-image: linear-gradient(90deg, #74EBD5 0%, #9FACE6 100%);
+}
+
+.heading{
+   text-align: center;
+    color: white;
+}
+
+
+.User-weather{
+    
+    width: 7rem;
+    font-size: 12px;
+    color: var(--colorLight2);
+    padding:  5px;
+    margin-top: 5rem;
+    margin-left: 30rem;
+    font-weight: bolder;
+   
+  
+}
+
+.search-weather{
+    
+    width: 7rem;
+    font-size: 12px;
+    color: var(--colorLight2);
+    padding: 5px;
+    font-weight: bolder;
+    margin-top:-21px;
+    margin-right: 30rem;
+   
+}
+
+#tab{
+    cursor: pointer;
+
+}
+
+#tab.current-tab{
+    background-color: var(--colorLight1);
+    border-radius: 30px;
+
+}
+
+.weather-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-block:0 4rem;
+}
+
+.btn{
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 9px;
+    padding: 0 4px;
+    background-color: var(--colorDark2);
+    border: none;
+    color: var(--colorLight2);
+    font-size: 12px;
+    padding: 2px;
+    margin-left: 18rem;
+    margin-top: 2rem;
+}
+
+.image1{
+    height: 80px;
+    width: 80px;
+    margin-top: 2rem;
+    margin-left: 18rem;
+}
+
+.locationpara{
+    color: var(--colorLight2);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-left: 13rem;
+
+}
+
+.allow{
+    color: var(--colorLight2);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-left: 8rem;
+}
+.grant-locationtab{
+   display: none;
+}
+
+.grant-locationtab.active{
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+ 
+.loading-container{
+    display: none;
+} 
+
+ .loading-container.active{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+.load{
+    color: var(--colorLight2);
+    font-size: 1.8rem;
+    margin-top:-2rem ;
+    margin-left: 5rem;
+
+} 
+
+ .loadimg{
+    height: 15rem;
+    width: 15rem;
+    margin-top: -5rem;
+}  
+
+.user-info-container{
+    display: none;
+    
+}
+
+.user-info-container.active{
+    display: flex;
+    flex-direction: column;
+}
+.name{
+    display: flex;
+    align-items: center;
+    gap: 0 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.user-info-container p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--colorLight2);
+}
+
+.user-info-container img{
+    width: 90px;
+    height: 90px;
+}
+.name p{
+    font-size: 2rem;
+}
+
+.name img{
+    padding: 1.5rem;
+
+
+}
+
+.image{
+    display: none;
+   
+}
+.image.active{
+    display: flex;
+    height: 20rem;
+    width: 20rem;
+    
+    
+}
+.image img{
+    height: 100%;
+    width: 100%;
+}
+.user-info-container p{
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--colorLight2);
+}
+
+.user-info-container img{
+    width: 90px;
+    height: 90px;
+}
+
+.temp{
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+.card-container{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.card{
+    width: 30%;
+    max-width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: var(--colorLight1);
+    color: var(--colorLight2);
+    padding-top: 20px;
+    border-radius: 7px;
+    
+
+}
+
+.card img{
+    height: 40px;
+    width: 40px;
+
+}
+
+.card p{
+    font-size: 13px;
+    color:#3254bb;
+}
+.searchform-container{
+    display: none;
+}
+
+.searchform-container.active{
+    display: flex;
+    gap: 1rem;
+    width: 90%;
+    margin-top: 2rem;
+    justify-content: center;
+    align-items: center;
+
+    
+} 
+
+.s1button{
+    all: unset;
+    background-color: var(--colorDark2);
+    padding:0 4px;
+    height: 25px;
+    border-radius: 60%;
+    
+}
+
+.screen{
+    all: unset;
+    background-color: var(--colorLight1);
+    border-radius: 10px;
+    padding: 0 30px;
+    height: 25px;
+
+}
+
+.searchform-container input::placeholder{
+    color: white;
+}
+
+.searchform-container input:focus{
+    outline: 3px solid #F9F7F7;
+} 

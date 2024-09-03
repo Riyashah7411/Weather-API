@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="heading">WEATHER APP</h1>
+    <div class="search-container">
+        <p id="tab" class="User-weather">Your Weather</p> 
+         <p id="tab" class="search-weather"> Search Weather</p>
+    </div>
+     
+    <div class="weather-container">
+        <!-- Grant location-->
+        <div class="grant-locationtab">
+            <img src="image1.png" alt="location" class="image1" height="23" width="23" loading="lazy">
+            <p class="locationpara">Grant Location Access</p>
+            <p class="allow">Allow Access to get weather information</p>
+            <button class="btn">Grant Access</button>
+
+        </div>
+
+         <!-- Form Container-->
+            <form class="searchform-container">
+                <input  placeholder="Search for City" class="screen">
+                <button class="s1button"><img src="image2.png" alt="search" height2="23" width="23" class="search"></button>
+            </form>
+           
+
+        <!-- Loading - container-->
+        <div class="loading-container">
+            <img  class="loadimg" src="loading.gif" loading="lazy" width="50" height="50">
+            <p class="load">Loading</p>
+        </div>
+
+         <!--User tab info -->
+        <div class=" sub-container user-info-container">
+            <div class="name">
+                <p class="data-cityname"></p>
+                <img class="data-image">
+            </div>
+            <p class="weather-desc"></p>
+            <img class="icon">
+            <p class="temp"></p>
+            
+         <!-- Card - container-->
+            <div class="card-container">
+
+                <div class="card">
+                    <img  src="image4.png" alt="wind " height="40" width="40">
+                    <p >Windspeed</p>
+                    <p class="windspeed"></p>
+                </div>
+
+                <div class="card">
+                    <img src="image5.png" alt="humidity" height="40" width="40">
+                    <p>Humidity</p>
+                    <p class="humidity"></p>
+                </div>
+
+                <div class="card">
+                    <img src="image6.png" alt="cloud" height="40" width="40">
+                    <p>Clouds</p>
+                    <p class="clouds"></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="image">
+        <img src="not-found.png">
+    </div>
+   
+    
+</div>
+   
+
+    <script src="script.js"></script>
+</body>
+</html>
